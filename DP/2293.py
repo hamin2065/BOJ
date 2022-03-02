@@ -10,6 +10,6 @@ DP[0] = 1
 
 for coin in coins : 
     for j in range(coin, k+1) : 
-        print("DP",DP)
         DP[j] += DP[j-coin]
+        print("DP",DP)
 print(DP[k])
